@@ -1,0 +1,10 @@
+{
+  // Cloudflare（Workers静的アセット）でこのSPAを配信するための設定。
+  // build 後の dist/ をそのまま静的配信し、未知のパスは index.html に返す（SPA）。
+  "name": "festival-navi-research",
+  "compatibility_date": "2025-06-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  }
+}
